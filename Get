@@ -1,0 +1,14 @@
+取TMap代码
+ssh git@nutshell.suntec.net
+mkdir TMap
+cd TMap
+git clone ssh://git@nutshell.suntec.net/tools/repo.git
+cd repo
+git checkout stable
+cd ..
+./repo/repo init -u ssh://igerrit.storm:29418/Src/14Model/iAutoPlatform/JA158/platform/manifest -b JA158/master
+./repo/repo sync
+./repo/repo start master --all 
+一行一个命令
+这是首次取代码的命令 
+等以后想同步代码的时候，只需要执行repo sync就可以了 
