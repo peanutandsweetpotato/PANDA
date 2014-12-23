@@ -12,3 +12,16 @@ cd ..
 一行一个命令
 这是首次取代码的命令 
 等以后想同步代码的时候，只需要执行repo sync就可以了 
+
+
+
+Host iauto
+  Hostname review.iauto.net
+  IdentityFile ~/.ssh/id_rsa
+  User wangyongkai
+  Port 29418
+
+Host igerrit.storm
+  Hostname igerrit.storm
+  IdentityFile ~/.ssh/id_rsa
+  User wangyongkai
